@@ -559,7 +559,7 @@
 
     </style>
 	<h1 style="color:#d52d58" class="container text">To my real rose,I send you a vitual bloom.</h1>
-    <div class="container rose">
+    <div class="container rose" style="opacity:0">
 	<div class="thorns">
 		<div></div>
 		<div></div>
@@ -593,26 +593,22 @@
 	</div>
 </div>
 	  <script>
-		  document.addEventListener("DOMContentLoaded", function() {
+		  
   // Initially hide the rose class
   const roseElement = document.querySelector('.rose');
   const textElement = document.querySelector('.text');
-
-  // Hide the rose element at first
-  roseElement.style.opacity = 0;
   
   // Fade in the rose element over time
   setTimeout(() => {
-    roseElement.style.transition = "opacity 2s";
+    roseElement.style.transition = "opacity 5s";
     roseElement.style.opacity = 1;
-  }, 500); // Wait for 0.5s before starting the fade-in effect
+  },500); // Wait for 0.5s before starting the fade-in effect
 
   // Hide the text element slowly after 5 seconds
   setTimeout(() => {
-    textElement.style.transition = "opacity 2s";
+    textElement.style.transition = "opacity 5s";
     textElement.style.opacity = 0;
-  }, 5000); // After 5 seconds, fade out the text
-});
+  }, 500); // After 5 seconds, fade out the text
 
 	  </script>
   </body>
